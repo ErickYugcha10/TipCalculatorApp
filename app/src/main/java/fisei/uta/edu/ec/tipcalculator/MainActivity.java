@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
         double tip = billAmount * percent;
         double total = billAmount + tip;
 
-        // Mostrar resultados con formato de moneda ($)
+        // Mostrar resultados con formato de moneda ($) sin esto la valores muestra sin
+        // el sigo de dolar 
         tipTextView.setText(currencyFormat.format(tip));
         totalTextView.setText(currencyFormat.format(total));
     }
